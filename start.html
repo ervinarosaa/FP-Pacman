@@ -1,0 +1,50 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="assets/logo.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PACMAN</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="css/index.css">
+
+        <style>@font-face {
+            font-family: fontku;
+            src: url(pacmanfont.ttf);
+        }
+        
+        h1{
+            font-family: fontku;
+            font-size: 500%;
+            color: yellow;
+            align-content: center;
+        }
+        </style>
+    </head>
+
+    <body>
+        <img src="assets/bg2.gif" alt="gambar bg" class="bg-img">
+        <header>
+            <div class="title">
+                <h1 onplay="">PACMAN</h1>
+            </div>
+        </header>
+        <main>
+            <div class="start">
+                <audio autoplay id="musikintro">
+                    <source src="audio/intro.mp3" type="audio/mp3">
+                </audio>
+                <div class="logogif">
+                    <img height="220px" src="assets/start.gif" alt="Pacman logo">
+                </div>
+                <div>
+                    <a href="index.html">
+                        <button class="btnplay">Play</button>
+                    </a>
+                </div>
+            </div>
+        </main>
+        
+    </body>
+
+</html>

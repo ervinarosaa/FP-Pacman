@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image" href="assets/logo.png" />
+    <title>Pacman</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <style>
+      @font-face {
+          font-family: fontku;
+          src: url(pacmanfont.ttf);
+      }
+
+      @font-face {
+      font-family: fontgame;
+      src: url(game_over.ttf);
+      }
+      
+      h1{
+          font-family: fontku;
+          font-size: 250%;
+          color: yellow;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <img src="assets/bg2.gif" alt="gambar bg" class="bg-img">
+    <header>
+      <div class="navbar">
+        <h1 onplay="">PACMAN</h1>
+      </div>
+    </header>
+
+    <main>
+      <!-- <audio autoplay id="intro">
+        <source src="audio/siren.mp3" type="audio/mp3">
+      </audio> -->
+      <audio src="audio/siren.mp3" id="gameover" hidden loop></audio>
+      <audio src="audio/intermission.mp3" id="win" hidden loop></audio>
+      <div>
+        <canvas id="canvas" class="canvas" width="420" height="500"></canvas>
+      </div>
+      
+      <div class="none">
+        <img id="animations" src="assets/animations.gif" alt="" />
+        <img id="ghosts" src="assets/ghost.png" alt="" />
+      </div>
+
+      <script src="js/hantu.js"></script>
+      <script src="js/pacman.js"></script>
+      <script src="js/game.js"></script>
+    </main>
+
+    <footer>
+      <div class>
+        <a href="index.html">
+          <button class="btngame">Restart</button>
+        </a>
+        <a href="start.html">
+          <button class="btngame">Back</button>
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>
